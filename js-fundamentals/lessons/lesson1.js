@@ -27,9 +27,12 @@ console.log("I'm going to work everyday.");
 console.log('I live in "Tehran" city');
 
 // using backslash for quotations
-console.log("I live in \"Pasdaran\" neighborhood.")
-
+console.log('I live in "Pasdaran" neighborhood.');
 
 // logging a numbers
 console.log(34);
 console.log(83.3);
+
+// numbers as a number VS. number as string
+console.log(19);
+console.log("19");
