@@ -6,7 +6,12 @@
 
 */
 
-// var
+/*
+
+var & let
+
+*/
+
 // declare then initiate
 var firstName;
 firstName = "Amirhossein";
@@ -47,7 +52,12 @@ console.log(x);
 x = 11;
 console.log(x);
 
-// constant variables
+/*
+
+Constant Variables
+
+*/
+
 const PI = 3.14;
 console.log(PI);
 
