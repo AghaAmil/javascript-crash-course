@@ -67,10 +67,12 @@ Arrays
 */
 
 arr1 = [1, 2, 3, 4, 5, 6, 7];
+console.log(arr1);
 
 // adds an element at the end of the array
 arr1.push(8);
-console.log(arr1);
+console.log(`Pushing the number 8 to the last index of arr1: ${arr1}`);
+console.log(`The length of the arr1 is: ${arr1.length}`);
 
 // adds an element at the beginning of the array
 arr1.unshift(0);
