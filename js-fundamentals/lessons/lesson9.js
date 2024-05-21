@@ -86,9 +86,9 @@ let power = Math.pow(2, 3);
 console.log("2 to the power of 3 is", power);
 
 // toUpperCase() converts text to uppercase
-let band = "Iron Maiden";
-let bandUpper = band.toUpperCase();
-console.log(`Favorite Band: ${bandUpper}`);
+let company = "Sanpp!";
+let companyUpper = company.toUpperCase();
+console.log(`My Company: ${companyUpper}`);
 
 // blank line
 console.log();
@@ -100,12 +100,12 @@ Export & Import Functions
 */
 
 // import a function
-import { addition } from "../lessons/functions/arithmetics.js";
+import { addition } from "../external-functions/arithmetics.js";
 
 console.log(`10 + 5 = ${addition(10, 5)}`);
 
 // import all
-import * as arithmetics from "../lessons/functions/arithmetics.js";
+import * as arithmetics from "../external-functions/arithmetics.js";
 
 console.log(`84 - 13 = ${arithmetics.subtraction(84, 13)}`);
 console.log(`9 * 17 = ${arithmetics.multiplication(9, 17).toFixed(2)}`);
