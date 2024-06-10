@@ -64,12 +64,12 @@ JavaScript Constructor Function
 
 // constructor function with parameters
 function person(fullname, yearBorn, gender) {
-  (this.fname = fullname),
-    (this.yearBorn = yearBorn),
-    (this.gender = gender),
-    (this.greet = function () {
-      return `Hello ${this.fname}`;
-    });
+  this.fname = fullname;
+  this.yearBorn = yearBorn;
+  this.gender = gender;
+  this.greet = function () {
+    return `Hello ${this.fname}`;
+  };
 
   this.age = function () {
     return 2024 - this.yearBorn;
