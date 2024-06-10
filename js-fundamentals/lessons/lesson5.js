@@ -19,7 +19,7 @@ const employee = {
   cars: ["BMW", "Benz", "Tesla"],
   position: {
     title: "QA Engineer",
-    level: "L2G2",
+    level: "L3G1",
   },
 };
 
@@ -60,13 +60,26 @@ console.log(`The Employee's new family name is: ${employee["familyName"]}`);
 // blank line
 console.log();
 
+// Add Object Properties
+employee.location = "Zaferaniyeh-F9";
+employee["position"]["team"] = "Superapp";
+
+// logging the new object properties
+console.log("The Object has new properties.");
+console.log(employee);
+console.log(`The Employee located at ${employee.location}.`);
+console.log(`The Employee belongs to ${employee["position"]["team"]} team.`);
+
+// blank line
+console.log();
+
 /*
 
 Arrays
 
 */
 
-arr1 = [1, 2, 3, 4, 5, 6, 7];
+let arr1 = [1, 2, 3, 4, 5, 6, 7];
 console.log(arr1);
 
 // adds an element at the end of the array
