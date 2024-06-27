@@ -12,9 +12,10 @@ Comparison Operators
 
 */
 
-// greater than
 let x = 7;
 console.log(`x = ${x}`);
+
+// greater than
 console.log(`10 > x : ${10 > x}`);
 
 // less than
@@ -47,26 +48,29 @@ Logical Operators
 
 // && logical AND
 // both expressions are true
-console.log(true && true);  // true
+console.log(true && true); // true
 // only one expression is true
-console.log(true && false);  // false
+console.log(true && false); // false
 // comparison example
-console.log(2 < 3 && 5 > 4);  // true
+console.log(2 < 3 && 5 > 4); // true
 
 // || logical OR
 // only one expression is true
-console.log(true || false);  // true
+console.log(true || false); // true
 // both expressions are false
-console.log(false || false);  // false
+console.log(false || false); // false
 // comparison example
-console.log(2 < 3 || 2 > 3);  // true
+console.log(2 < 3 || 2 > 3); // true
 
-// ! logical NOT
+/*
+
+ ! logical NOT
+
+*/
 
 // NOT on true
-console.log(!true);  // false
+console.log(!true); // false
 // NOT on false
-console.log(!false);  // true
+console.log(!false); // true
 // comparison example
-console.log(!(2 < 3));  // false
-
+console.log(!(2 < 3)); // false
