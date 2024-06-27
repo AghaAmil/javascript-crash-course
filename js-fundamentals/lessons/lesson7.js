@@ -12,8 +12,11 @@ if, else statement
 
 */
 
+// using prompt-sync
+const prompt = require("prompt-sync")();
+
 // sample 1
-let yourMark = 99;
+let yourMark = prompt("Enter Your Mark (0 - 100): ");
 
 if (yourMark >= 90) {
   console.log("You are 'First Class' student");
@@ -29,7 +32,7 @@ if (yourMark >= 90) {
 console.log();
 
 // Nested if...else Statement
-let marks = 60;
+let marks = prompt("Enter Your Mark (0 - 100): ");
 
 // outer if...else statement
 // student passed if marks 40 or above
@@ -48,22 +51,26 @@ if (marks >= 40) {
   console.log("Failed");
 }
 
-// Output: Passed
-
 // blank line
 console.log();
 
 // sample 2
-let timeOfTheDay = 19;
+let timeOfTheDay = prompt("Enter the time in Hour: ");
 
-if (timeOfTheDay >= 6 && timeOfTheDay <= 12) {
-  console.log("Good Morning To You");
-} else if (timeOfTheDay > 12 && timeOfTheDay <= 18) {
-  console.log("Good Afternoon To You");
-} else if (timeOfTheDay > 18 && timeOfTheDay <= 24) {
-  console.log("Good Night To You");
+if (timeOfTheDay > 0 && timeOfTheDay <= 24) {
+  // valid
+
+  if (timeOfTheDay > 4 && timeOfTheDay < 11) {
+    console.log("Morning!");
+  } else if (timeOfTheDay >= 11 && timeOfTheDay < 15) {
+    console.log("Noon!");
+  } else if (timeOfTheDay >= 15 && timeOfTheDay < 20) {
+    console.log("Afternoon!");
+  } else {
+    console.log("Night!");
+  }
 } else {
-  console.log("Enter a Valid Time");
+  console.log("Enter a valid time in hour.");
 }
 
 // blank line
@@ -76,8 +83,7 @@ switch case statement
 */
 
 // Suppose we want to display a message based on the current day of the week
-let day = 3;
-let activity;
+let day = prompt("Enter the current day of week in numbers (1-7): ");
 
 switch (day) {
   case 1:
@@ -113,7 +119,7 @@ switch (day) {
 }
 
 // switch statement
-let trafficLight = "green";
+let trafficLight = prompt("Enter the traffic light color: ");
 let message = "";
 
 switch (trafficLight) {
