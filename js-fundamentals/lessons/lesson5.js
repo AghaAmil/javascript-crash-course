@@ -79,10 +79,11 @@ console.log(`displaying the first number 3 in our complex arr: ${data[0][2]}`);
 console.log();
 
 // loop through arrays
-const listOfCars = ["Audi", "Tesla", "Ford", "BMW"];
+const cars = ["Benz", "BMW", "Tesla", "Volvo", "Audi", "Ford", "Ferrari"];
+console.log(cars);
 
-for (let i = 0; i < listOfCars.length; i++) {
-  console.log(`List Of Cars, Index ${i} = ${listOfCars[i]} `);
+for (let i = 0; i < cars.length; i++) {
+  console.log(`Array index ${i} = ${cars[i]}`);
 }
 
 // blank line
