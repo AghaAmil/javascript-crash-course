@@ -12,63 +12,22 @@ Objects
 
 */
 
-const employee = {
-  firstName: "Amirhossein",
-  familyName: "Moravveji",
-  age: 30,
-  cars: ["BMW", "Benz", "Tesla"],
-  position: {
-    title: "QA Engineer",
-    level: "L3G1",
-  },
+// human object
+const person = {
+  name: "John",
+  fname: "Miller",
+  age: 45,
 };
 
-console.log(employee);
+// displaying the whole object
+console.log(`Our Object is: ${person}`);
 
-// blank line
-console.log();
+// displaying object value using dot notation
+console.log(`The person name is: ${person.name}`);
 
-// Using dot Notation
-console.log(employee.firstName);
-console.log(employee.age);
-console.log(employee.cars);
-
-// Using bracket Notation
-console.log(employee["cars"]);
-console.log(employee["age"]);
-console.log(employee["firstName"]);
-
-// blank line
-console.log();
-
-// Nested Objects
-console.log(employee.position.title);
-console.log(employee["position"]["level"]);
-console.log(employee.cars[0]);
-console.log(employee["cars"][1]);
-
-// blank line
-console.log();
-
-// Updating Object Values
-employee["firstName"] = "Ali";
-employee.familyName = "Fallah-Sohy";
-
-console.log(`The Employee's new name is: ${employee.firstName}`);
-console.log(`The Employee's new family name is: ${employee["familyName"]}`);
-
-// blank line
-console.log();
-
-// Add Object Properties
-employee.location = "Zaferaniyeh-F9";
-employee["position"]["team"] = "Superapp";
-
-// logging the new object properties
-console.log("The Object has new properties.");
-console.log(employee);
-console.log(`The Employee located at ${employee.location}.`);
-console.log(`The Employee belongs to ${employee["position"]["team"]} team.`);
+// displaying object value using bracket notation
+console.log(`The person family name is: ${person["fname"]}`);
+console.log(`The person age is: ${person.age}`);
 
 // blank line
 console.log();
@@ -79,29 +38,70 @@ Arrays
 
 */
 
-let arr1 = [1, 2, 3, 4, 5, 6, 7];
-console.log(arr1);
+let arr = [1, 2, 3, 4, 5, 6, 7];
+console.log(arr);
+
+// empty array
+const emptyArray = [];
+// array of strings
+const dailyActivities = ["eat", "work", "sleep"];
+// array with mixed data types
+const mixedArray = ["work", 1, true];
+// multidimensional array
+const data = [
+  [1, 2, 3],
+  [1, 3, 4],
+  [4, 5, 6],
+];
+
+// accessing the first element of the array
+console.log(`The first element of the arr is: ${arr[0]}`);
+console.log(`The last element of the array is: ${arr[6]}`);
+
+// length of an array
+console.log(`The length of the array is: ${arr.length}`);
+
+// the last index of array is:
+console.log(arr.length - 1);
+
+// therefore we can write in this way to find the last item of the array
+console.log(`The last element of the array is: ${arr[arr.length - 1]}`);
+
+// blank line
+console.log();
+
+// accessing multidimensional array
+console.log(`displaying the first row of the complex arr: ${data[0]} `);
+console.log(`displaying the middle number of our complex arr: ${data[1][1]}`);
+console.log(`displaying the first number 3 in our complex arr: ${data[0][2]}`);
+
+// blank line
+console.log();
+
+// loop through arrays
+const listOfCars = ["Audi", "Tesla", "Ford", "BMW"];
+
+for (let i = 0; i < listOfCars.length; i++) {
+  console.log(`List Of Cars, Index ${i} = ${listOfCars[i]} `);
+}
+
+// blank line
+console.log();
 
 // adds an element at the end of the array
-arr1.push(8);
-console.log(`Pushing the number 8 to the last index of arr1: ${arr1}`);
-console.log(`The length of the arr1 is: ${arr1.length}`);
+arr.push(8);
+console.log(`Pushing the number 8 to the last index of arr: ${arr}`);
+console.log(`The length of the arr is: ${arr.length}`);
 
 // adds an element at the beginning of the array
-arr1.unshift(0);
-console.log(arr1);
+arr.unshift(0);
+console.log(arr);
 
 // remove an element from any specified index of an array
 // remove two elements at the index 5
-arr1.splice(5, 2);
-console.log(arr1);
+arr.splice(5, 2);
+console.log(arr);
 
 // change the element of an array
-arr1[0] = "new array";
-console.log(arr1);
-
-// length of an array
-console.log(arr1.length);
-
-// the last index of array is:
-console.log(arr1.length - 1);
+arr[0] = "new array";
+console.log(arr);
