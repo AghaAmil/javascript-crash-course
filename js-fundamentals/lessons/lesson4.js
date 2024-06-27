@@ -28,6 +28,7 @@ console.log(sample_str);
 
 /*
 
+Extra materials after knowing arrays
 Access String Characters
 
 */
@@ -45,7 +46,7 @@ Strings are immutable
 */
 
 let my_name = "amirhossein";
-let my_name_cap = 'AMIRHOSSEIN'
+let my_name_cap = "AMIRHOSSEIN";
 my_name[0] = "A";
 console.log(my_name);
 
@@ -55,6 +56,6 @@ String Methods
 
 */
 
-console.log(my_name.length)
-console.log(my_name.toUpperCase())
-console.log(my_name_cap.toLowerCase())
+console.log(my_name.length);
+console.log(my_name.toUpperCase());
+console.log(my_name_cap.toLowerCase());

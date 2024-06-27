@@ -15,6 +15,7 @@ Basic Functions
 // function can be called before declaration
 greeting();
 
+// declarative function
 function greeting() {
   console.log("Hello World!");
 }
@@ -24,6 +25,7 @@ greeting();
 // blank line
 console.log();
 
+// anonymous function
 let displayPi = function () {
   const PI = 3.14;
   console.log(`PI Number = ${PI}`);
