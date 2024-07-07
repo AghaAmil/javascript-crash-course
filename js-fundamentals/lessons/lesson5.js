@@ -86,6 +86,31 @@ for (let i = 0; i < cars.length; i++) {
   console.log(`Array index ${i} = ${cars[i]}`);
 }
 
+// other loop samples with array:
+arr2 = [1, 3, 5, 7, 2, 11, 13, 15, 9, 17, 19];
+
+for (i = 0; i < arr2.length; i++) {
+  if (arr2[i] % 2 === 0) {
+    break;
+  }
+  console.log(`${arr2[i]}`);
+}
+
+// blank line
+console.log();
+// blank line
+console.log();
+
+
+// display odd numbers
+for (let i = 1; i <= 10; i++) {
+  // skip the iteration if i is even
+  if (i % 2 === 0) {
+    continue;
+  }
+  console.log(i);
+}
+
 // blank line
 console.log();
 
