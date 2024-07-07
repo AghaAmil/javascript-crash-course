@@ -10,6 +10,8 @@
 for loops
 
 */
+// using prompt-sync
+const prompt = require("prompt-sync")();
 
 // show the iteration
 for (let i = 1; i <= 5; i++) {
@@ -22,24 +24,15 @@ console.log();
 // display sum of n natural numbers
 // natural numbers = all positive integers from 1 to infinity
 sum = 0;
-n = 100;
+input = prompt("Enter a positive integer: ");
 
-for (let i = 1; i <= n; i++) {
+// loop from i = 1 to i = n
+// in each iteration, i is increased by 1
+for (let i = 1; i <= input; i++) {
   sum += i; //  sum = sum + i
 }
 
-// blank line
-console.log();
-
-console.log(`The Sum of natural numbers upto 100 = ${sum}`);
-
-// iterate through an array
-const cars = ["Benz", "BMW", "Tesla", "Volvo", "Audi", "Ford", "Ferrari"];
-console.log(cars);
-
-for (let i = 0; i < cars.length; i++) {
-  console.log(`Array index ${i} = ${cars[i]}`);
-}
+console.log(`The Sum of natural numbers upto ${input} = ${sum}`);
 
 // blank line
 console.log();
@@ -61,17 +54,24 @@ console.log(`The value of i after the last iteration: ${i}`);
 // blank line
 console.log();
 
-// Add numbers of array from start until their sum is bigger than 100
-let ListOfNums = [12, 5, 2, 35, 18, 32, 1, 5, 2, 23, 32, 2, 22];
+// Sum of Only Positive Numbers
+let user_input = 0;
 let sum1 = 0;
-let j = 0;
+let counter = 0;
 
-while (sum1 <= 100) {
-  sum1 += ListOfNums[j];
-  j++;
+// loop as long as num is 0 or positive
+while (user_input >= 0) {
+  // add all positive numbers
+  sum1 += user_input;
+
+  // take input from the user
+  user_input = Number(prompt("Enter a desired number: "));
+
+  // counts the entered number
+  counter++;
 }
 
-console.log(`Value of J: ${j}. The Sum Of Numbers: ${sum1}`);
+console.log(`${counter - 1} positive number is entered. The Sum = ${sum1}`);
 
 // blank line
 console.log();
@@ -81,14 +81,26 @@ console.log();
 Break Statement
 
 */
-arr2 = [1, 3, 5, 7, 2, 11, 13, 15, 9, 17, 19];
 
-for (i = 0; i < arr2.length; i++) {
-  if (arr2[i] % 2 === 0) {
+let sumOfNumbers = 0;
+let counter1 = 0;
+
+// infinite loop
+while (true) {
+  // get number input
+  let input = Number(prompt("Enter a desired number: "));
+
+  // terminate the loop if num is negative
+  if (input <= 0) {
     break;
+  } else {
+    // otherwise, add num to sum
+    sumOfNumbers += input;
   }
-  console.log(`${arr2[i]}`);
+  counter1++;
 }
+
+console.log(`${counter1} positive number is entered. The Sum = ${sumOfNumbers}`);
 
 // blank line
 console.log();
@@ -101,12 +113,16 @@ Continue Statement
 
 */
 
-// display odd numbers
+// user input
+let starter = 1;
+let inputNumber = Number(prompt("Enter a number: "));
 
-for (let i = 1; i <= 10; i++) {
-  // skip the iteration if i is even
-  if (i % 2 === 0) {
+while (starter <= inputNumber) {
+  if (starter % 2 === 0) {
+    ++starter;
     continue;
   }
-  console.log(i);
+
+  console.log(starter);
+  ++starter;
 }
