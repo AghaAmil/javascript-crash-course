@@ -46,3 +46,39 @@ console.log();
 
 person2.greet();
 console.log(person2.age());
+
+class Rectangle {
+  constructor(width, height) {
+    this.width = width;
+    this.height = height;
+  }
+
+  // Method to calculate the area of the rectangle
+  calculateArea() {
+    return this.width * this.height;
+  }
+
+  // Method to calculate the perimeter of the rectangle
+  calculatePerimeter() {
+    return 2 * (this.width + this.height);
+  }
+
+  // Method to display the dimensions of the rectangle
+  displayDimensions() {
+    console.log(`Rectangle: ${this.width} x ${this.height}`);
+  }
+}
+
+// Create a new Rectangle instance
+const myRectangle = new Rectangle(5, 10);
+
+// Display the dimensions of the rectangle
+myRectangle.displayDimensions();
+
+// Calculate and display the area of the rectangle
+const area = myRectangle.calculateArea();
+console.log(`Area: ${area}`);
+
+// Calculate and display the perimeter of the rectangle
+const perimeter = myRectangle.calculatePerimeter();
+console.log(`Perimeter: ${perimeter}`);
