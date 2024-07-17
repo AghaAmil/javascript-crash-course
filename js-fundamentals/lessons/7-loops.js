@@ -1,15 +1,17 @@
 /*
 
 ********************************************
-******* Lesson 8 - for, while loops ********
+******* Lesson 7 - for, while loops ********
 ********************************************
 
 */
+
 /*
 
 for loops
 
 */
+
 // using prompt-sync
 const prompt = require("prompt-sync")();
 

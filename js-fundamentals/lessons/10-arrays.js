@@ -1,40 +1,8 @@
 /* 
 
 ********************************************
-******* Lesson 5 - Objects & Arrays ********
+************ Lesson 10 - Arrays ************
 ********************************************
-
-*/
-
-/*
-
-Objects
-
-*/
-
-// human object
-const person = {
-  name: "John",
-  fname: "Miller",
-  age: 45,
-};
-
-// displaying the whole object
-console.log(`Our Object is: ${person}`);
-
-// displaying object value using dot notation
-console.log(`The person name is: ${person.name}`);
-
-// displaying object value using bracket notation
-console.log(`The person family name is: ${person["fname"]}`);
-console.log(`The person age is: ${person.age}`);
-
-// blank line
-console.log();
-
-/*
-
-Arrays
 
 */
 
@@ -89,7 +57,11 @@ for (let i = 0; i < cars.length; i++) {
 // other loop samples with array:
 arr2 = [1, 3, 5, 7, 2, 11, 13, 15, 9, 17, 19];
 
+// display odd numbers
+
 for (i = 0; i < arr2.length; i++) {
+  // skip the iteration if i is even
+
   if (arr2[i] % 2 === 0) {
     break;
   }
@@ -100,16 +72,6 @@ for (i = 0; i < arr2.length; i++) {
 console.log();
 // blank line
 console.log();
-
-
-// display odd numbers
-for (let i = 1; i <= 10; i++) {
-  // skip the iteration if i is even
-  if (i % 2 === 0) {
-    continue;
-  }
-  console.log(i);
-}
 
 // blank line
 console.log();

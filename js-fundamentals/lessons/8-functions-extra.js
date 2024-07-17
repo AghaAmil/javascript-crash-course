@@ -11,6 +11,7 @@ function greeting() {
   console.log("Hello World!");
 }
 
+// declarative function
 let displayPi = function () {
   const PI = 3.14;
   console.log(`PI Number = ${PI}`);
@@ -40,6 +41,13 @@ arrowDisplayPi();
 // blank line
 console.log();
 
+const square = (x) => x * x;
+// use the arrow function to square a number
+console.log(square(5));
+
+// blank line
+console.log();
+
 // an arrow function to add two numbers
 const addNumbers = (a, b) => a + b;
 
@@ -52,10 +60,10 @@ function Person() {
   this.name = "Jack";
   this.age = 25;
   this.sayName = function () {
-    console.log(this.age);
+    console.log(`The Age of ${this.name} is ${this.age}`);
 
     let innerFunc = () => {
-      console.log(this.age);
+      console.log(`The Age of ${this.name} is ${this.age}`);
     };
 
     innerFunc();

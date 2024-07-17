@@ -25,7 +25,7 @@ greeting();
 // blank line
 console.log();
 
-// anonymous function
+// anonymous function or function expression
 let displayPi = function () {
   const PI = 3.14;
   console.log(`PI Number = ${PI}`);
