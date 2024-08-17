@@ -259,7 +259,8 @@ if (condition) {
     // block of code
 }
 ```
-![[Pasted image 20240620194706.png]]
+![Pasted image 20240620194706](https://github.com/user-attachments/assets/684e61d2-75b6-4551-b964-8c6e2863733f)
+
 
 ## 6.2 Else Statement
 We use the `else` keyword to execute code when the condition specified in the preceding `if` statement evaluates to `false`.
@@ -273,7 +274,8 @@ else {
     // execute this if condition is false
 }
 ```
-![[Pasted image 20240620194842.png]]
+![Pasted image 20240620194842](https://github.com/user-attachments/assets/436bb930-7152-4ac3-8ddb-f3550386d6ed)
+
 
 ## 6.3 else if Statement
 We can use the `else if` keyword to check for multiple conditions.
@@ -293,7 +295,8 @@ else {
     // else body
 }
 ```
-![[Pasted image 20240620194953.png]]
+![Pasted image 20240620194953](https://github.com/user-attachments/assets/f5915a27-73c2-4e18-9292-c591e7d03b12)
+
 
 ## 6.4 switch...case Statement
 The JavaScript `switch...case` statement executes different blocks of code based on the value of a given expression.
@@ -317,7 +320,7 @@ switch (expression) {
         // if expression doesn't match any case
 }
 ```
-![[Pasted image 20240620204551.png]]
+![Pasted image 20240620204551](https://github.com/user-attachments/assets/65e4751f-c5d6-4bf6-97fe-b65d4e3a7d0a)
 
 
 # 7.0 Loops
@@ -368,20 +371,20 @@ while (condition) {
 
 ## 7.3 break Statement
 The `break` statement terminates the loop immediately when it's encountered.
-![[Pasted image 20240620205803.png]]
+![Pasted image 20240620205803](https://github.com/user-attachments/assets/8dbf25bb-fcbe-4570-9814-0ef5961aa237)
 
 > [!NOTE]
 > The `break` statement is usually used inside decision-making statements such as if...else.
 
 ## 7.4 continue Statement
 The `continue` statement skips the current iteration of the loop and proceeds to the next iteration.
-![[Pasted image 20240620222339.png]]
+![Pasted image 20240620222339](https://github.com/user-attachments/assets/3a6d68c3-02cd-4401-bf59-3ec481a83e8a)
 
 
 # 8.0 Functions
 A function is an independent block of code that performs a specific task, while a function expression is a way to store functions in variables.
 We can create a function in JavaScript using the `function` keyword:
-![[Pasted image 20240625203645.png]]
+![Pasted image 20240625203645](https://github.com/user-attachments/assets/d6e30742-0572-4c06-a674-4cb88e04e061)
 Here, we have created a simple function named `greet()` that prints `Hello World!` on the screen.
 Our function contains the following parts:
 - **Function Keyword** - The `function` keyword is used to create the function.
@@ -411,7 +414,7 @@ greet("John");
 // Output: Hello John
 ```
 In the above example, we passed `"John"` as an argument to the `greet()` function.
-![[Pasted image 20240717120634.png]]
+![Pasted image 20240717120634](https://github.com/user-attachments/assets/7dea3afb-eef9-43cb-b6de-9954351e1370)
 Notice the name variable declared inside parentheses:
 Here, name is a **function parameter**, which acts as a placeholder to store the function argument.
 In other words, the argument `"John"` is stored in the name parameter.
@@ -459,10 +462,11 @@ console.log(`Square: ${square}`);
 In the above example, we have created a function named `findSquare()`. The function accepts a number and returns the square of the number.
 In our case, we passed **3** as an argument to the function. So, the function returns the square of **3**, which is **9**, to the function call.
 We then stored this return value in the square variable and printed it.
-![[Pasted image 20240717121042.png]]
+![Pasted image 20240717121042](https://github.com/user-attachments/assets/3076bff6-4459-4fc5-bff2-73552d806b25)
 
 Any code written in the function after the `return` statement is not executed. For example:
-![[Pasted image 20240717121142.png]]
+![Pasted image 20240717121142](https://github.com/user-attachments/assets/bad4432a-497b-4116-89ae-84987bd0aa97)
+
 In this example, the `display()` function doesn't execute the second `console.log()` statement inside it.
 This is because the function execution stops at the `return` statement. So, the following code is never reached:
 ```javascript
@@ -589,7 +593,7 @@ Here,
 Each key-value pair has a colon `:` between them and is separated by a comma `,`.
 
 In JavaScript, the key-value pairs of an object are referred to as **properties**. For example:
-![[Pasted image 20240521175919.png]]
+![Uploading Pasted image 20240521175919.png…]()
 
 Each member of an object is a **key: value** pair separated by commas and enclosed in curly braces `{}`.
 In JavaScript, "key: value" pairs are called **properties**. You can access the **value** of a property by using its **key**.
@@ -600,7 +604,7 @@ An array is an object that can store multiple values at once. We can create an
 const age = [17, 18, 15, 19, 14];
 ```
 In the above example, we created an array to record the age of five students.
-![[Pasted image 20240627204840.png]]
+![Pasted image 20240627204840](https://github.com/user-attachments/assets/98b9d7bf-1f7b-4420-acc0-ef5db8dec313)
 
 Arrays allow us to organize related data by grouping them within a single variable.
 Suppose you want to store a list of fruits. Using only variables, this process might look like this:
@@ -705,7 +709,8 @@ Jack
 24
 ```
 You can think of a multidimensional array (in this case, x), as a table with **3** rows and **2** columns.
-![[Pasted image 20240717140048.png]]
+<img width="387" alt="Pasted image 20240717140048" src="https://github.com/user-attachments/assets/9486b19b-a2a8-4387-80ab-4a2d0e99ecbd">
+
 
 # 11.0 Classes
 In JavaScript ES6, classes provide a way to create blueprints for objects, similar to traditional object-oriented programming languages like C++ or Java.
@@ -817,15 +822,16 @@ class Person {
 
 **Class Constructor**
 A class constructor is a special method within a class that is automatically executed when a new object of that class is created.
-![[Pasted image 20240717123005.png]]
 The `Person` class constructor initializes the `name` and `age` properties when a new object is created.
 Here,
 - the `person1` object is initialized with `"Jack"` and **30**
 - the `person2` object is initialized with `"Tina"` and **33**
 
+![Pasted image 20240717123005](https://github.com/user-attachments/assets/c7dc7cd6-13d3-490b-ab9f-fb254943fb76)
+
 **Class Method**
 A class method is a function inside a class that defines behaviors for the class's objects.
-![[Pasted image 20240717123053.png]]
+![Pasted image 20240717123053](https://github.com/user-attachments/assets/4b96a4cc-eefc-4c59-829d-1afac41ce84b)
 Here, `greet()` is a method of the `Person` class that displays a greeting message when called on objects of the class.
 
 # ES6
