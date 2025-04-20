@@ -131,3 +131,8 @@ dist
 
 # MacOS fils
 .DS_Store
+
+# Obsidian files
+.obsidian/
+
+
