@@ -1,7 +1,7 @@
 {
-  "name": "teaching-basic",
+  "name": "javascript-crash-course",
   "version": "1.0.0",
-  "description": "Basic JavaScript required for k6 framework",
+  "description": "Javascript course required for Software Test Engineers",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
